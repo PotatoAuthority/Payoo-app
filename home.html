@@ -74,7 +74,7 @@
         </div>
     </section>
 
-    <section class="w-11/12 mx-auto">
+    <section class="w-11/12 mx-auto mb-10">
         <h3 class="text-2xl font-bold">Cashout</h3>
         <div class="form pt-4">
             <div class="card bg-base-100 w-full mx-auto rounded-6">
@@ -90,7 +90,37 @@
                     <label class="label text-neutral font-bold">4 Digit Pin</label>
                     <input id="pin-input" type="password" minlength="4" maxlength="4" class="input rounded-full bg-base-200 border-0 w-full" placeholder="Enter 4 Digit Pin" />
                     
-                    <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
+                    <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full text-[16px] font-bold">Withdraw Money</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-11/12 mx-auto">
+        <h3 class="text-2xl font-bold">Add Money</h3>
+        <div class="form pt-4">
+            <div class="card bg-base-100 w-full mx-auto rounded-6">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                    <label class="label text-neutral font-bold">Select A Bank</label>
+                    <select class="select rounded-full bg-base-200 border-0 w-full">
+                        <option disabled selected>Select bank</option>
+                        <option value="BRAC BANK">BRAC BANK</option>
+                        <option value="IBBL">IBBL</option>
+                        <option value="DBBL">DBBL</option>
+                    </select>
+                    <br>
+                    <label class="label text-neutral font-bold">Bank Account Number</label>
+                    <input id="" type="number" minlength="11" maxlength="11" class="input rounded-full bg-base-200 border-0 w-full" placeholder="Enter 11 digit account number" />
+                        <br>
+                    <label class="label text-neutral font-bold">Amount</label>
+                    <input id="" type="number" class="input rounded-full bg-base-200 border-0 w-full" placeholder="Amount to Add" />
+                    
+                        <br>
+                    <label class="label text-neutral font-bold">4 Digit Pin</label>
+                    <input id="" type="password" minlength="4" maxlength="4" class="input rounded-full bg-base-200 border-0 w-full" placeholder="Enter 4 Digit Pin" />
+                    
+                    <button id="" class="btn btn-primary mt-4 rounded-full text-[16px] font-bold">Add Money</button>
                     </fieldset>
                 </div>
             </div>
