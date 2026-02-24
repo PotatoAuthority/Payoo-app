@@ -6,8 +6,7 @@ p('connected: cashout.js')
 
 document.getElementById('cashout-btn').addEventListener('click', function(){
     //current balance
-    const balanceElement = document.getElementById('balance');
-    const balance = balanceElement.innerText;
+    const balance = getBalance();
     p(balance);
     //get cashout balance
     const cashout = getValue('cashout');
@@ -23,7 +22,7 @@ document.getElementById('cashout-btn').addEventListener('click', function(){
     //get pin
     const pinElem = document.getElementById('pin-input');
     const pin = getValue('pin-input');
-    
+
     if(agentNum.length != 11){
         alert('Invalid Num');
         return;
@@ -40,7 +39,7 @@ document.getElementById('cashout-btn').addEventListener('click', function(){
     }
 
     if(pin == 1234){
-        balanceElement.innerText = final_balance;
+        setBalance(final_balance);
         alert('Cashout Success');
     }
     else{

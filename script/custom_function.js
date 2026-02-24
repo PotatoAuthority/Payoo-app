@@ -12,3 +12,16 @@ function getText(id){
     console.log(id, value);
     return value;
 }
+
+function getBalance(){
+    const balanceElement = document.getElementById('balance');
+    const balance = balanceElement.innerText;
+    console.log('balance', balance);
+    return Number(balance);
+}
+
+function setBalance(input){
+    const balanceElement = document.getElementById('balance');
+    balanceElement.innerText = input;
+    console.log('balance', input);
+}
