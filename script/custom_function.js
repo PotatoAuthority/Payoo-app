@@ -25,3 +25,11 @@ function setBalance(input){
     balanceElement.innerText = input;
     console.log('balance', input);
 }
+
+function setVisible(id){
+    document.getElementById('cashout-cont').classList.add('hidden');
+    document.getElementById('addMoney-cont').classList.add('hidden');
+
+    const element = document.getElementById(id);
+    element.classList.remove('hidden');
+}

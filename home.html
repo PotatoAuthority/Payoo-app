@@ -47,11 +47,11 @@
         <p class="text-neutral/50">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
 
         <div class="buttons grid grid-cols-3 gap-3 pt-4">
-            <button class="btn flex-col h-full p-5 btn-primary btn-soft">
+            <button onclick="setVisible('addMoney-cont')" class="btn flex-col h-full p-5 btn-primary btn-soft">
                 <img src="./assets/opt-1.png" alt="">
                 <p>Add Money</p>
             </button>
-            <button class="btn flex-col h-full p-5">
+            <button onclick="setVisible('cashout-cont')" class="btn flex-col h-full p-5">
                 <img src="./assets/opt-2.png" alt="">
                 <p>Cashout</p>
             </button>
@@ -74,7 +74,7 @@
         </div>
     </section>
 
-    <section class="w-11/12 mx-auto mb-10">
+    <section id="cashout-cont" class="w-11/12 mx-auto mb-10 hidden">
         <h3 class="text-2xl font-bold">Cashout</h3>
         <div class="form pt-4">
             <div class="card bg-base-100 w-full mx-auto rounded-6">
@@ -96,7 +96,7 @@
             </div>
         </div>
     </section>
-    <section class="w-11/12 mx-auto">
+    <section id="addMoney-cont" class="w-11/12 mx-auto hidden">
         <h3 class="text-2xl font-bold">Add Money</h3>
         <div class="form pt-4">
             <div class="card bg-base-100 w-full mx-auto rounded-6">
