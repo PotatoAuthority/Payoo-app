@@ -103,7 +103,7 @@
                 <div class="card-body">
                     <fieldset class="fieldset">
                     <label class="label text-neutral font-bold">Select A Bank</label>
-                    <select class="select rounded-full bg-base-200 border-0 w-full">
+                    <select id="bank-opt" class="select rounded-full bg-base-200 border-0 w-full">
                         <option disabled selected>Select bank</option>
                         <option value="BRAC BANK">BRAC BANK</option>
                         <option value="IBBL">IBBL</option>
@@ -111,16 +111,16 @@
                     </select>
                     <br>
                     <label class="label text-neutral font-bold">Bank Account Number</label>
-                    <input id="" type="number" minlength="11" maxlength="11" class="input rounded-full bg-base-200 border-0 w-full" placeholder="Enter 11 digit account number" />
+                    <input id="b_account_num" type="number" minlength="11" maxlength="11" class="input rounded-full bg-base-200 border-0 w-full" placeholder="Enter 11 digit account number" />
                         <br>
                     <label class="label text-neutral font-bold">Amount</label>
-                    <input id="" type="number" class="input rounded-full bg-base-200 border-0 w-full" placeholder="Amount to Add" />
+                    <input id="add_amount" type="number" class="input rounded-full bg-base-200 border-0 w-full" placeholder="Amount to Add" />
                     
                         <br>
                     <label class="label text-neutral font-bold">4 Digit Pin</label>
-                    <input id="" type="password" minlength="4" maxlength="4" class="input rounded-full bg-base-200 border-0 w-full" placeholder="Enter 4 Digit Pin" />
+                    <input id="addMoney_pin" type="password" minlength="4" maxlength="4" class="input rounded-full bg-base-200 border-0 w-full" placeholder="Enter 4 Digit Pin" />
                     
-                    <button id="" class="btn btn-primary mt-4 rounded-full text-[16px] font-bold">Add Money</button>
+                    <button id="addMoney-btn" class="btn btn-primary mt-4 rounded-full text-[16px] font-bold">Add Money</button>
                     </fieldset>
                 </div>
             </div>
@@ -128,5 +128,6 @@
     </section>
     <script src="./script/custom_function.js"></script>
     <script src="./script/cashout.js"></script>
+    <script src="./script/addMoney.js"></script>
 </body>
 </html>
