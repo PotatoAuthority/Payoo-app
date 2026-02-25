@@ -40,6 +40,27 @@ document.getElementById('cashout-btn').addEventListener('click', function(){
 
     if(pin == 1234){
         setBalance(final_balance);
+
+        //transaction history
+        const transElem = document.getElementById('trans-cards-container');
+        const trans_card = document.createElement('div');
+
+        trans_card.innerHTML = `
+        <div class="trans-card card p-4 bg-base-100 w-full mx-auto rounded-6 space-y-2">
+                <div class=" flex flex-row justify-start items-center gap-2">
+                    <img src="./assets/opt-1.png" alt="">
+                    <p class="font-semibold text-[17px]">Cashout</p>
+                </div>
+                
+                <p>Amount: ${cashout}$ To ${agentNum}</p>
+                <p>Time: ${new Date()} </p>
+            </div>
+        `;
+
+        transElem.append(trans_card);
+
+        
+
         alert('Cashout Success');
     }
     else{

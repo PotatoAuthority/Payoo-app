@@ -29,7 +29,11 @@ function setBalance(input){
 function setVisible(id){
     document.getElementById('cashout-cont').classList.add('hidden');
     document.getElementById('addMoney-cont').classList.add('hidden');
+    document.getElementById('transaction-cont').classList.add('hidden');
 
     const element = document.getElementById(id);
     element.classList.remove('hidden');
+
+    //auto scroll to section
+    element.scrollIntoView({ behavior: 'smooth' });
 }
